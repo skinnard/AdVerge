@@ -1,7 +1,7 @@
 <footer class="bg-body w-full px-5  pb-40 pt-20 relative">
   <div class="max-w-[1400px] m-auto relative z-10">
     <h2 class="text-white text-[350px] font-gothic uppercase leading-none text-center">Contact Us</h2>
-    <form class="mt-5 m-auto max-w-[500px]" name="contact" method="POST" data-netlify="true">
+    <form class="contact-form mt-5 m-auto max-w-[500px]" name="contact" method="POST" data-netlify="true">
       <p class="text-white font-figtree text-xl mb-8">Let&rsquo;s discuss your success in the Canadian market!</p>
       <div class="mb-5">
         <input
@@ -40,6 +40,9 @@
               dark:hover:bg-primary-700 dark:focus:ring-primary-800">
             Contact AdVerge</button>
         </form>
+        <div class="success-msg hidden bg-green-200 rounded max-w-xl m-auto py-5 px-3 text-center text-body text-xl">
+          <p>Thanks for reaching out. I&rsquo;ll get back to you as soon as I can.</p>
+        </div>
       </div>
       <div class="absolute top-1/2 right-40 z-0 opacity-30">
         {% include "star-shape.njk" %}

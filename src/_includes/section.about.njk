@@ -1,40 +1,41 @@
 {% for item in collections.sections %}
   {% if item.data.type === 'about' %}
     <section>
-      <div class="max-h-[850px] overflow-hidden rounded-b-[100px]">
+      <div class="h-auto max-h-[850px] overflow-hidden rounded-b-[100px]">
         <img
           src="/img/toronto.webp"
           width=""
           height=""
-          class="relative top-[-100px] object-cover object-center w-full h-full mix-blend-luminosity"
+          class="relative md:top-0 lg:top-[-100px] object-cover object-center w-full h-full mix-blend-luminosity"
           alt="Toronto">
       </div>
-      <div class="max-w-[1000px] m-auto py-32">
+      <div class="max-w-[1000px] m-auto py-16 sm:py-32 px-5">
         <h2 class="font-gothic text-[48px] uppercase mb-5">A 14 Billion Dollar Market</h2>
-        <p class="font-figtree text-[18px]">The Canadian digital advertising ecosystem offers immense potential for global ad tech firms
-          looking for top line growth and geographical expansion. Boasting a ~14 Billion dollar digital ad ecosystem, the Canadian
-          digital ad landscape operates largely from 3 main markets Toronto, Montreal and Vancouver. While we Canadians are known
-          for our polite, reserved, and collaborative approach to business, understanding and embracing the Canadian business
-          ethos is key for global firms seeking success in this market. Our insights and localized expertise offer a bridge,
-          ensuring that your business resonates with the Canadian personality, fostering meaningful connections and driving
-          impactful results.</p>
-        <h2 class="font-gothic text-[48px] uppercase mt-20 mb-5">Why Choose AdVerge?</h2>
-        <div class="grid grid-cols-3 justify-between gap-10">
+        <p class="font-figtree text-[18px] pb-5">The Canadian digital advertising ecosystem offers immense potential for global ad
+          tech firms looking for top line growth and geographical expansion. Boasting a ~14 Billion dollar digital ad ecosystem,
+          the Canadian digital ad landscape operates largely from 3 main markets Toronto, Montreal and Vancouver.</p>
+          <p class="font-figtree text-[18px]">While we
+          Canadians are known for our polite, reserved, and collaborative approach to business, understanding and embracing the
+          Canadian business ethos is key for global firms seeking success in this market. Our insights and localized expertise
+          offer a bridge, ensuring that your business resonates with the Canadian personality, fostering meaningful connections
+          and driving impactful results.</p>
+        <h2 class="font-gothic text-[48px] uppercase mt-16 sm:mt-20 mb-5">Why Choose AdVerge?</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 justify-between gap-10">
           <div>
             <h3 class="text-[20px] font-semibold mb-4">Expertise & Local Insights</h3>
-            <p class="text-[16px]">Our strategic relationships & local insight, developed over 15+ years of digital sales experience, enable our clients
-              to win in the Canadian market.</p>
+            <p class="text-[16px]">Our strategic relationships & local insight, developed over 15+ years of digital sales
+              experience, enable our clients to win in the Canadian market.</p>
           </div>
           <div>
-           <h3 class="text-[20px] font-semibold mb-4">Revenue Growth</h3>
-            <p class="text-[16px]">Our tried & true sales process delivers high six to seven figure revenue growth within the first year of entering the
-              Canadian Market.
+            <h3 class="text-[20px] font-semibold mb-4">Revenue Growth</h3>
+            <p class="text-[16px]">Our tried & true sales process delivers high six to seven figure revenue growth within the first
+              year of entering the Canadian Market.
             </p>
           </div>
           <div>
             <h3 class="text-[20px] font-semibold mb-4">Flexibility</h3>
-            <p class="text-[16px]">Scale your operation in Canada without the long-term tax obligations and overhead commitments associated with a
-              permanent presence.</p>
+            <p class="text-[16px]">Scale your operation in Canada without the long-term tax obligations and overhead commitments
+              associated with a permanent presence.</p>
           </div>
         </div>
       </div>

@@ -1,33 +1,34 @@
 {% for item in collections.sections %}
   {% if item.data.type === 'features' %}
-    <div id="features" class="w-full min-h-screen flex flex-col justify-center items-center bg-blue-900 py-12">
-      <div class="self-center text-center w-full sm:w-2/3 xl:w-1/2 px-4 sm:px:0">
-        <h2 class="tracking-wide text-blue-200 font-bold text-4xl mb-4">{{ item.data.title }}</h2>
-        <div class="font-light text-gray-200 text-xl mb-6">
-          {{ item.templateContent | safe }}
+    <section id="features" class="w-full flex flex-col justify-center  bg-[#111111] py-32">
+      <div class="w-full max-w-[1000px] m-auto">
+        <div class="">
+          <h2 class="font-gothic text-[48px] uppercase mb-5 text-white">About Us</h2>
         </div>
-      </div>
-      <div class="self-center w-full xl:w-4/5 flex flex-col sm:flex-row flex-wrap px-4 xl:px:0">
-        {% for item in features %}
-          <div class="w-full sm:w-1/2 flex flex-row flex-no-wrap hover:shadow-lg hover:bg-blue-800 hover:bg-opacity-50 px-4 sm:px-8 py-6 sm:py-12">
-            <div class="w-1/3 xl:w-1/4">
-              <img src="/img/features/{{ item.icon }}" alt="{{ item.title }}" class="w-16 block sm:mx-auto">
-            </div>
-            <div class="w-2/3 xl:w-3/4">
-              <h3 class="tracking-wide text-purple-300 font-bold text-2xl uppercase mb-2">{{ item.title }}</h3>
-              <div class="font-light text-gray-200 text-lg">
-                {{ item.content | markdown | safe }}
-              </div>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-      <div class="self-center text-center w-full sm:w-1/3 px-4 sm:px:0">
-        <h3 class="font-bold tracking-widest text-blue-200 text-2xl my-6">{{ item.data.afterTitle }}</h3>
-      </div>
-      <div class="flex flex-row w-full justify-center pt-6">
-        <a class="px-10 py-2 text-gray-200 bg-purple-600 rounded-full shadow-md text-lg hover:bg-gray-800 hover:border-red" href="#register">Register Now</a>
-      </div>
-    </div>
-  {% endif %}
-{% endfor %}
+        <div class="">
+          <p class="text-white font-semibold font-figtree text-lg pb-6">AdVerge is led by Canadian ad industry force Jeff McCann.</p>
+          <p class="text-light-white font-figtree text-lg pb-8">With 15 years experience immersed in the dynamic world of Canadian
+            Digital Advertising Sales, Jeff is a seasoned trailblazer, having sold campaigns for many of the Fortune 1,000 giants to
+            homegrown Canadian enterprises.
+          </p>
+          <p class="text-light-white font-figtree text-lg pb-8">Working with clients such as Air Canada Media, Sharethrough, Teads,
+            Native Touch and Silverpush, selling both self-serve programmatic solutions as well as managed service solutions, Jeff
+            boasts a track record of closing many millions in digital ad revenue for his clients.
+          </p>
+          <p class="text-light-white font-figtree text-lg pb-8">Celebrated with multiple President's Club sales awards, Media Innovation
+            Awards, and Agency Partnership honours, Jeff is a force, extending influence across advertising agencies nationwide,
+            from the Holdcos to the independents.
+          </p>
+          <p class="text-light-white font-figtree text-lg pb-8">Under Jeff's leadership, AdVerge stands out as a game changer for global
+            ad tech firms seeking expansion into Canada. With years of experience and a track record of successful campaigns,
+            AdVerge offers more than services – it delivers a roadmap to success. From navigating intricate nuances to leveraging an
+            extensive network, their approach is dynamic and results-driven. Clients joining forces with AdVerge experience a
+            transformative journey, where every move is strategic, and every success is amplified.
+          </p>
+        </div>
+        <div class="w-full mt-10">
+          <img class="rounded-full grayscale w-[300px]" width="" height="" src="/img/jeff.webp" alt="Jeff McCann"></div>
+        </div>
+      </section>
+    {% endif %}
+  {% endfor %}

@@ -1,57 +1,50 @@
-<footer class="w-full flex flex-col sm:flex-row sm:justify-center text-lg tracking-wide px-4 sm:px-0 py-16">
-  <div class="text-center pr-0 sm:pr-8 py-4">
-    <ul class="list-none">
-      {% for item in site.social %}
-        <li>
-          <a class="text-gray-800 hover:text-purple-600 no-underline" href="{{ item.url }}" target="_blank" rel="_noopener">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="h-px sm:h-auto w-1/2 sm:w-px bg-purple-600 mx-auto sm:mx-0"></div>
-  <div class="text-center px-8 py-4">
-    <ul class="list-none">
-      <li>
-        <a class="text-gray-800 hover:text-purple-600 no-underline" href="{% if isFront %}#about{% else %}{{ site.baseURL }}/#about{% endif %}">About</a>
-      </li>
-      <li>
-        <a class="text-gray-800 hover:text-purple-600 no-underline" href="{% if isFront %}#features{% else %}{{ site.baseURL }}/#features{% endif %}">Features</a>
-      </li>
-    </ul>
-  </div>
-  <div class="h-px sm:h-auto w-1/2 sm:w-px bg-purple-600 mx-auto sm:mx-0"></div>
-  <div class="text-center pl-0 sm:pl-8 py-4">
-    <ul class="list-none">
-      <li>
-        <a class="text-gray-800 hover:text-purple-600 no-underline" href="/privacy">Privacy</a>
-      </li>
-      <li>
-        <a class="text-gray-800 hover:text-purple-600 no-underline" href="/imprint">Imprint</a>
-      </li>
-    </ul>
-  </div>
-</footer>
-<div class="w-full">
-  <span class="block text-center text-gray-800 text-sm font-light">
-    &copy; AWE.SOME
-  </span>
-</div>
-<div class="">
-  <a id="btt"
-    class="hidden fixed bottom-0 right-0 mb-4 mr-4 text-gray-200 border border-purple-600 hover:bg-gray-200 hover:text-purple-600 hover:border-browngray no-underline px-6 py-1 bg-purple-600 shadow-md"
-    href="#top" title="Back to Top">UP</a>
-</div>
-<div class="fixed bottom-0 left-0 m-6">
-  <a href="https://github.com/ttntm/11ty-landing-page" target="_blank" rel="noopener" title="Get this theme @ GitHub"
-    class="block rounded-full bg-black text-purple-600 hover:bg-white hover:text-black shadow-md p-4">
-    <img src="/img/github.svg" width="30" height="30" class="block" alt="GitHub icon">
-  </a>
-</div>
-<!-- "Follow" Tooltip template -->
-<template id="followTip">
-  {% for item in site.social %}
-    <a href="{{ item.url }}"
-      class="inline-block text-gray-200 text-sm bg-purple-600 shadow-md hover:bg-gray-200 hover:text-gray-800 no-underline p-1 px-4 mx-2 my-1"
-      target="_blank" rel="noopener">{{ item.title }}</a>
-  {% endfor %}
-</template>
+<footer class="bg-body w-full px-5  pb-40 pt-20 relative">
+  <div class="max-w-[1400px] m-auto relative z-10">
+    <h2 class="text-white text-[350px] font-gothic uppercase leading-none text-center">Contact Us</h2>
+    <form class="mt-5 m-auto max-w-[500px]" name="contact" method="POST" data-netlify="true">
+      <p class="text-white font-figtree text-xl mb-8">Let&rsquo;s discuss your success in the Canadian market!</p>
+      <div class="mb-5">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="font-figtree shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500
+            focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
+            dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+          placeholder="Name"
+          required="required"></div>
+        <div class="mb-5">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="font-figtree block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm
+              focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
+              dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+            placeholder="Email"
+            required="required"></div>
+          <div class="mb-5">
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              class="font-figtree block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300
+                focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
+                dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              placeholder="Message"></textarea>
+          </div>
+          <button
+            type="submit"
+            class="py-5 px-5 text-sm text-center text-body rounded-lg bg-yellow-500 sm:w-fit hover:bg-primary-800 w-full font-figtree
+              uppercase font-semibold tracking-widest focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600
+              dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+            Contact AdVerge</button>
+        </form>
+      </div>
+      <div class="absolute top-1/2 right-40 z-0 opacity-30">
+        {% include "star-shape.njk" %}
+      </div>
+      <div class="absolute top-1/4 left-40 z-0 opacity-30 rotate-45">
+        {% include "ellipse-light-1.njk" %}
+      </div>
+    </footer>
